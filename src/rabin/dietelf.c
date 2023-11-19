@@ -144,7 +144,7 @@ static int ELF_(do_elf_checks)(ELF_(dietelf_bin_t) *bin)
 	}
 
 	if (ehdr->e_version != EV_CURRENT) {
-		fprintf(stderr, "ELF version not current\n");
+		fprintf(stderr, "ELF version not current [0x%08x]\n", ehdr->e_version);
 		return -1;
 	}
 

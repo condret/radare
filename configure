@@ -392,7 +392,8 @@ HAVE_LANG_CXX=0
 echo no
  fi
 printf "checking host endianness... "
-LIL_ENDIAN=$(printf I|od|${AWK}'{print substr($2,6,1);exit}')
+#LIL_ENDIAN=$(printf I|od|${AWK}'{print substr($2,6,1);exit}')
+LIL_ENDIAN=1
 if [ 0 != 0 -o "${LIL_ENDIAN}" = 1 ]; then
 	BYTEORDER=1234
 	BIG_ENDIAN=0
