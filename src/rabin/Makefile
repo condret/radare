@@ -6,7 +6,7 @@ OBJ=dietelf.o dietelf64.o rabin.o dietpe.o dietpe64.o dietmach0.o dietmach0_util
 all: rabin${BINSFX}
 
 rabin${BINSFX}: ${OBJ}
-	${CC} ${OBJ} ${DL_LIBS} -o rabin${BINSFX}
+	${CC} ${OBJ} ${DL_LIBS} -z muldefs -o rabin${BINSFX}
 
 install:
 	cd .. && ${MAKE} install

@@ -47,6 +47,8 @@ int SIZE_RECORD_SIZE    = sizeof(size_record);
 /*----------------------------------------------------------------------------*/
 /* Global variables                                                           */
 
+unsigned int error_code;
+
 instr_set  instruction_set;                                   /* ARM or Thumb */
 char      *input_file_name;
 char      *symbols_file_name;

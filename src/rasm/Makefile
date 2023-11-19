@@ -9,7 +9,7 @@ OBJ+=${OLLYOBJ}
 all: rasm${BINSFX}
 
 rasm${BINSFX}: ${OBJ}
-	${CC} ${OBJ} -o rasm${BINSFX} ../utils.c
+	${CC} ${OBJ} -z muldefs -o rasm${BINSFX} ../utils.c
 
 clean:
 	-rm -f ${OBJ} rasm${BINSFX}

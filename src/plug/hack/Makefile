@@ -19,7 +19,9 @@ CFLAGS+=${LUA_CFLAGS} ${PY_CFLAGS}
 
 CFLAGS+=-I../.. -g
 
-all: hello.${SO} lua.${SO} gtk-hello.${SO} scriptedit.${SO} python25.${SO} ruby.${SO} gtk-prefs.${SO} gtk-topbar.${SO} perl.${SO} python26.${SO} python27.${SO}
+#all: hello.${SO} lua.${SO} gtk-hello.${SO} scriptedit.${SO} python25.${SO} ruby.${SO} gtk-prefs.${SO} gtk-topbar.${SO} perl.${SO} python26.${SO} python27.${SO}
+
+all: hello.${SO} lua.${SO} gtk-hello.${SO} scriptedit.${SO} python25.${SO} ruby.${SO} gtk-prefs.${SO} gtk-topbar.${SO} python26.${SO} python27.${SO}
 
 hello.${SO}:
 	${CC} ${CFLAGS} ${SHARED_CFLAGS} hello.c -o hello.${SO}

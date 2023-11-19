@@ -10,7 +10,7 @@ CFLAGS+=-I..
 all: ${BIN} _bdiff rdbdiff$(BINSFX)
 	
 ${BIN}: ${OBJ}
-	${CC} ${CFLAGS} ${LDFLAGS} ${OBJ} ${LIBS} -o ${BIN}
+	${CC} ${CFLAGS} ${LDFLAGS} ${OBJ} ${LIBS} -z muldefs -o ${BIN}
 
 _bdiff:
 	-cd bdiff && ${MAKE} all

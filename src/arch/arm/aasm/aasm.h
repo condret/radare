@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "../../../include/bfd.h"
 
 #define TRUE               (0 == 0)
 #define FALSE              (0 != 0)
